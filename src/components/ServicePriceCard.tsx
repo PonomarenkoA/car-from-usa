@@ -1,6 +1,5 @@
 'use client';
 import { RightArrow } from '@/assets/svgs';
-import React from 'react';
 import { ServicePriceItem } from '@/types';
 import { Button } from './ui';
 
@@ -13,7 +12,7 @@ export const ServicePriceCard = (props: ServicePriceCardProps) => {
 
 	return (
 		<div className='w-[300px]'>
-			<div className='rounded-3 bg-[#0076FE] p-4 text-white'>
+			<div className='rounded-xl bg-secondary p-4 text-white'>
 				<span className='block text-center text-[21px] font-semibold leading-[26px]'>
 					{item.title}
 				</span>
@@ -46,7 +45,7 @@ export const ServicePriceCard = (props: ServicePriceCardProps) => {
 					onClick={() => {
 						console.log('OnClick');
 					}}
-					className='m-auto mt-12 gap-4 rounded-[15px] bg-[#FFE600] px-[34px] py-[26px] text-[15px] font-bold leading-[18px] text-[#303030]'
+					className='m-auto mt-12 gap-4 rounded-[15px] bg-primary px-[34px] py-[26px] text-[15px] font-bold leading-[18px] text-[#303030]'
 				/>
 			</div>
 		</div>

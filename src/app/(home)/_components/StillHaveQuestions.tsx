@@ -9,7 +9,7 @@ export const StillHaveQuestions = () => {
 		<div className='space-y-11' id='still-have-questions'>
 			<h2 className='text-center uppercase'>STILL HAVE QUESTIONS?</h2>
 
-			<div className='relative h-[533px] w-[1140px] rounded-[30px] bg-[#0076FE] py-[75px] text-white'>
+			<div className='relative h-[533px] w-[1140px] rounded-[30px] bg-secondary py-[75px] text-white'>
 				<Image
 					src='/Free_MacBook_Pro_1.svg'
 					width={806}
@@ -43,7 +43,7 @@ export const StillHaveQuestions = () => {
 							title='SEND A REQUEST'
 							leftIcon={<Email />}
 							onClick={() => console.log('OnClick')}
-							className='mx-auto mt-[50px] gap-[17px] rounded-[15px] bg-[#FFE600] px-[45px] py-[26px] text-[15px] font-bold leading-[18px] text-[#303030]'
+							className='mx-auto mt-[50px] gap-[17px] rounded-[15px] bg-primary px-[45px] py-[26px] text-[15px] font-bold leading-[18px] text-[#303030]'
 						/>
 					</form>
 				</div>

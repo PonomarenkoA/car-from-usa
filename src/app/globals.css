@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		--color-primary: 255 230 0; /* #FFE600 */
+		--color-secondary: 0 118 254; /* #0076FE */
+	}
+
 	h1 {
 		@apply text-[50px] font-bold leading-[62px];
 	}

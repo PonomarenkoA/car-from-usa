@@ -34,7 +34,7 @@ export const Header = () => {
 						onClick={() => {
 							console.log('OnClick');
 						}}
-						className='ml-[50px] gap-2.5 rounded-xl bg-[#0076FE] px-7 py-6 text-[13px] font-bold leading-4 text-white'
+						className='ml-[50px] gap-2.5 rounded-xl bg-secondary px-7 py-6 text-[13px] font-bold leading-4 text-white'
 					/>
 				</a>
 			</nav>
