@@ -12,6 +12,7 @@ import Loupe from './loupe.svg';
 import Calendar from './icon-calendar.svg';
 import DownArrow from './down-arrow.svg';
 import Cancel from './cancel.svg';
+import Accept from './accept.svg';
 
 export {
 	Application,
@@ -27,5 +28,6 @@ export {
 	Loupe,
 	Calendar,
 	DownArrow,
-	Cancel
+	Cancel,
+	Accept
 };
