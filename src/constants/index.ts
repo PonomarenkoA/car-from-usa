@@ -8,6 +8,7 @@ import {
 } from '@/assets/svgs';
 import {
 	FaqItem,
+	FilterItem,
 	HowItWorkItem,
 	ServicePriceItem,
 	WhatIsItForItem
@@ -131,4 +132,62 @@ export const WhatIsItForItems: WhatIsItForItem[] = [
 			'After all, only the big ones companies have car catalogs.',
 		icon: SecureShield
 	}
+];
+
+export const AuctionTypeItems: FilterItem[] = [
+	{ title: 'Copart', isSelected: false },
+	{ title: 'IAAI', isSelected: false }
+];
+
+export const CarBrandItems: FilterItem[] = [
+	{ title: 'Acura', isSelected: false },
+	{ title: 'Alfa Romeo', isSelected: false },
+	{ title: 'Aston Martin', isSelected: false },
+	{ title: 'Audi', isSelected: false },
+	{ title: 'Bentley', isSelected: false },
+	{ title: 'BMW', isSelected: false },
+	{ title: 'Buick', isSelected: false },
+	{ title: 'Cadillac', isSelected: false },
+	{ title: 'Chevrolet', isSelected: false },
+	{ title: 'Chrysler', isSelected: false },
+	{ title: 'Honda', isSelected: false }
+];
+
+export const CarModelItems: FilterItem[] = [
+	{ title: 'Accord', isSelected: false },
+	{ title: 'Civic', isSelected: false },
+	{ title: 'Clarity', isSelected: false },
+	{ title: 'CR-V', isSelected: false },
+	{ title: 'Crosstour', isSelected: false },
+	{ title: 'Element', isSelected: false },
+	{ title: 'Fit', isSelected: false },
+	{ title: 'GL', isSelected: false },
+	{ title: 'HR-V', isSelected: false },
+	{ title: 'Insight', isSelected: false }
+];
+
+export const DamageItems: FilterItem[] = [
+	{ title: 'All over', isSelected: false },
+	{ title: 'Biohazard/chemical', isSelected: false },
+	{ title: 'Burn', isSelected: false },
+	{ title: 'Damage history', isSelected: false },
+	{ title: 'Electrical', isSelected: false },
+	{ title: 'Engine damage', isSelected: false },
+	{ title: 'Flood', isSelected: false },
+	{ title: 'Frame damage', isSelected: false },
+	{ title: 'Front & rear', isSelected: false },
+	{ title: 'Front end', isSelected: false }
+];
+
+export const ConditionItems: FilterItem[] = [
+	{ title: 'Engine start', isSelected: false },
+	{ title: 'Run & drive', isSelected: false },
+	{ title: 'Does not start', isSelected: false }
+];
+
+export const DocumentTypeItems: FilterItem[] = [
+	{ title: 'Clean', isSelected: false },
+	{ title: 'Salvage', isSelected: false },
+	{ title: 'Non repairable', isSelected: false },
+	{ title: 'Other', isSelected: false }
 ];

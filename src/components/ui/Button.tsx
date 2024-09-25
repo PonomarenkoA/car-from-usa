@@ -2,7 +2,8 @@
 import { clsx } from 'clsx';
 
 interface ButtonProps {
-	title: string;
+	title?: string;
+	children?: React.ReactNode;
 	onClick: () => void;
 	className?: string;
 	leftIcon?: React.ReactElement;
@@ -15,15 +16,20 @@ export const Button = (props: ButtonProps) => {
 		onClick,
 		className,
 		leftIcon: LeftIcon,
-		rightIcon: RightIcon
+		rightIcon: RightIcon,
+		children
 	} = props;
 	return (
 		<button
 			onClick={onClick}
-			className={clsx('flex flex-row items-center uppercase', className)}
+			className={clsx(
+				'flex flex-row items-center justify-center',
+				className
+			)}
 		>
 			{LeftIcon ? LeftIcon : null}
-			<span>{title}</span>
+			{title ? <span>{title}</span> : null}
+			{children ? children : null}
 			{RightIcon ? RightIcon : null}
 		</button>
 	);

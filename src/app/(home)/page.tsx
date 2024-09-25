@@ -9,7 +9,7 @@ import {
 	Hero
 } from './_components';
 
-export default function Home() {
+const HomePage = () => {
 	return (
 		<>
 			<Header />
@@ -32,4 +32,6 @@ export default function Home() {
 			<Footer />
 		</>
 	);
-}
+};
+
+export default HomePage;

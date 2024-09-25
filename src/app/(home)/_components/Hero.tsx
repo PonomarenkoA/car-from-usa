@@ -1,8 +1,11 @@
 'use client';
 import { RightArrow } from '@/assets/svgs';
 import { Button } from '@/components/ui';
+import { useRouter } from 'next/navigation';
 
 export const Hero = () => {
+	const router = useRouter();
+
 	return (
 		<div
 			className='relative h-[832px] after:absolute after:inset-0 after:z-10 after:bg-[#142539] after:opacity-75'
@@ -23,7 +26,7 @@ export const Hero = () => {
 					title='DEMO VERSION'
 					rightIcon={<RightArrow width='11' height='11' />}
 					onClick={() => {
-						console.log('OnClick');
+						router.push('/catalog');
 					}}
 					className='mt-[55px] gap-4 rounded-[15px] bg-primary px-10 py-7 text-[15px] font-bold leading-[18px] text-[#303030]'
 				/>

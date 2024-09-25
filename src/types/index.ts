@@ -24,3 +24,8 @@ export type WhatIsItForItem = {
 	description: string;
 	icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
 };
+
+export type FilterItem = {
+	title: string;
+	isSelected: boolean;
+};

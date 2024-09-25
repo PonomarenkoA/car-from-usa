@@ -17,4 +17,17 @@
 	h3 {
 		@apply text-[15px] font-bold leading-[18px];
 	}
+
+	::-webkit-scrollbar {
+		width: 3px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgb(243 243 243);
+		border-radius: 3px;
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgb(var(--color-primary));
+		border-radius: 3px;
+	}
 }

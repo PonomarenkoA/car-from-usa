@@ -8,6 +8,10 @@ import RightArrow from './right-arrow.svg';
 import SecureShield from './secure-shield.svg';
 import Traffic from './traffic.svg';
 import WebDesign from './web-design.svg';
+import Loupe from './loupe.svg';
+import Calendar from './icon-calendar.svg';
+import DownArrow from './down-arrow.svg';
+import Cancel from './cancel.svg';
 
 export {
 	Application,
@@ -19,5 +23,9 @@ export {
 	RightArrow,
 	SecureShield,
 	Traffic,
-	WebDesign
+	WebDesign,
+	Loupe,
+	Calendar,
+	DownArrow,
+	Cancel
 };
