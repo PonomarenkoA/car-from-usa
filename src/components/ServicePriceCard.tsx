@@ -41,7 +41,7 @@ export const ServicePriceCard = (props: ServicePriceCardProps) => {
 
 				<Button
 					title='ORDER PLAN'
-					rightIcon={<RightArrow />}
+					rightIcon={<RightArrow width='11' height='11' />}
 					onClick={() => {
 						console.log('OnClick');
 					}}

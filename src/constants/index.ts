@@ -127,7 +127,7 @@ export const WhatIsItForItems: WhatIsItForItem[] = [
 		icon: Hiring
 	},
 	{
-		title: 'ncreasing Trust in Your Company',
+		title: 'Increasing Trust in Your Company',
 		description:
 			'After all, only the big ones companies have car catalogs.',
 		icon: SecureShield
