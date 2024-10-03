@@ -8,6 +8,23 @@
 		--color-secondary: 0 118 254; /* #0076FE */
 	}
 
+	/*
+		#FFE600
+		#0075FF
+
+		#EF1B1A
+		#003688
+
+		#00C96E
+		#FFC700
+
+		#0042D7
+		#FF8500
+
+		#8600CB
+		#FFDE00	
+	*/
+
 	h1 {
 		@apply text-[50px] font-bold leading-[62px];
 	}

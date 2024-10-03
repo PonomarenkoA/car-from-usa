@@ -13,6 +13,11 @@ import Calendar from './icon-calendar.svg';
 import DownArrow from './down-arrow.svg';
 import Cancel from './cancel.svg';
 import Accept from './accept.svg';
+import Accident from './accident.svg';
+import Info from './info.svg';
+import SteeringWheel from './steering-wheel.svg';
+import Copy from './copy.svg';
+import Check from './check.svg';
 
 export {
 	Application,
@@ -29,5 +34,10 @@ export {
 	Calendar,
 	DownArrow,
 	Cancel,
-	Accept
+	Accept,
+	Accident,
+	Info,
+	SteeringWheel,
+	Copy,
+	Check
 };

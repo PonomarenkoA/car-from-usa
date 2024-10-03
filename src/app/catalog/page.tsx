@@ -1,11 +1,5 @@
-import {
-	Banner,
-	Breadcrumbs,
-	Cars,
-	Pagination,
-	Toolbar,
-	Header
-} from './_components';
+import { Banner, Breadcrumbs, Header } from '@/components';
+import { Cars, Pagination, Toolbar } from './_components';
 import { Filter } from './_components/Filter';
 
 const CatalogPage = () => {
