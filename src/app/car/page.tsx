@@ -1,4 +1,4 @@
-import { Banner, Breadcrumbs, CarCard, Header } from '@/components';
+import { Banner, Breadcrumbs, Header } from '@/components';
 import Image from 'next/image';
 import {
 	DamageInfo,
@@ -7,6 +7,7 @@ import {
 	Description,
 	SimilarLots
 } from './_components';
+import { Buy } from '@/components/Buy';
 
 const CarPage = () => {
 	return (
@@ -81,23 +82,20 @@ const CarPage = () => {
 								</div>
 							</div>
 							<div className='w-[370px] space-y-[34px]'>
-								<CarCard className='h-[340px]'>
-									<CarCard.Buy className='border-0 p-[20px]'>
-										<CarCard.DateTimer className='rounded-[10px] bg-[#F7F7F7] pb-[25px] pt-[28px] text-[24px] leading-[29px]'>
-											<CarCard.Date />
-											<CarCard.Timer />
-										</CarCard.DateTimer>
-										<CarCard.Price className='mt-[34px] text-[36px] leading-[44px]' />
-										<CarCard.Buttons className='mt-[21px]'>
-											<CarCard.Button className='h-[60px]'>
-												ORDER A CAR
-											</CarCard.Button>
-											<CarCard.Button className='h-[60px] bg-secondary text-white'>
-												$4.200 <br /> BUY IT NOW
-											</CarCard.Button>
-										</CarCard.Buttons>
-									</CarCard.Buy>
-								</CarCard>
+								<Buy className='w-[370px]'>
+									<Buy.DateTimer>
+										<Buy.Date>25.09.2023</Buy.Date>
+										<Buy.Timer></Buy.Timer>
+									</Buy.DateTimer>
+									<Buy.Price>$3,150</Buy.Price>
+									<Buy.Buttons>
+										<Buy.Button>ORDER A CAR</Buy.Button>
+										<Buy.Button className='text-secondary-foreground bg-secondary'>
+											$4,200
+											<br /> BUY IT NOW
+										</Buy.Button>
+									</Buy.Buttons>
+								</Buy>
 
 								<DamageInfo />
 							</div>

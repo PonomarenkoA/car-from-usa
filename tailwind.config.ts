@@ -5,8 +5,14 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: 'rgb(var(--color-primary))',
-				secondary: 'rgb(var(--color-secondary))'
+				primary: {
+					DEFAULT: 'rgb(var(--color-primary))',
+					foreground: 'rgb(var(--color-primary-foreground))'
+				},
+				secondary: {
+					DEFAULT: 'rgb(var(--color-secondary))',
+					foreground: 'rgb(var(--color-secondary-foreground))'
+				}
 			}
 		}
 	},

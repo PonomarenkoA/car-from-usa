@@ -4,15 +4,15 @@ type Props = {
 	className?: string;
 };
 
-export const CarCardTimer = ({ className }: Props) => {
+export const BuyTimer = ({ className }: Props) => {
 	return (
-		<div
+		<span
 			className={cn(
-				'text-center font-semibold text-[#303030]',
+				'text-[24px] font-semibold leading-[29px] text-[#303030]',
 				className
 			)}
 		>
 			3 d : 23 h : 45 m
-		</div>
+		</span>
 	);
 };

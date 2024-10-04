@@ -17,7 +17,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body
-				className={`${montserrat.className} relative mx-auto max-w-[1280px] overflow-x-hidden antialiased`}
+				className={`${montserrat.className} relative mx-auto max-w-[1280px] overflow-x-hidden pb-[70px] antialiased`}
 			>
 				{children}
 			</body>

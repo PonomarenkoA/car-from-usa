@@ -5,11 +5,11 @@ type Props = {
 	children: React.ReactNode;
 };
 
-export const CarCardDateTimer = ({ className, children }: Props) => {
+export const BuyDateTimer = ({ className, children }: Props) => {
 	return (
 		<div
 			className={cn(
-				'space-y-[12px] text-[18px] font-semibold leading-[22px]',
+				'flex flex-col items-center gap-y-[12px] rounded-[10px] bg-[#F7F7F7] py-[30px]',
 				className
 			)}
 		>

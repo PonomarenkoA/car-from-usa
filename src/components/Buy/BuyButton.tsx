@@ -7,14 +7,14 @@ type Props = {
 	children: React.ReactNode;
 };
 
-export const CarCardButton = ({ className, children }: Props) => {
+export const BuyButton = ({ className, children }: Props) => {
 	return (
 		<Button
 			onClick={() => {
 				console.log('OnClick');
 			}}
 			className={cn(
-				'h-full w-full text-nowrap rounded-[10px] bg-primary text-center text-[13px] font-bold leading-[16px] text-[#303030]',
+				'text-primary-foreground h-full w-full rounded-[10px] bg-primary text-center text-[13px] font-bold leading-[16px]',
 				className
 			)}
 		>

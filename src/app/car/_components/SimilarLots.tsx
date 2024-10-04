@@ -1,4 +1,5 @@
 import { RightArrow } from '@/assets/svgs';
+import { Buy } from '@/components/Buy';
 import { CarCard } from '@/components/CarCard';
 
 export const SimilarLots = () => {
@@ -26,17 +27,15 @@ export const SimilarLots = () => {
 							<CarCard.Details className='justify-between' />
 						</CarCard.Content>
 					</CarCard.Body>
-					<CarCard.Buy className='flex items-center justify-between border-l-0 border-t-[1px] px-[20px] py-[25px]'>
-						<CarCard.Price className='text-[21px] leading-[26px]' />
-						<CarCard.Buttons>
-							<CarCard.Button className='px-[20px]'>
-								BUY A CAR
-							</CarCard.Button>
-						</CarCard.Buttons>
-						<CarCard.DateTimer className='flex items-center'>
-							<CarCard.Date />
-						</CarCard.DateTimer>
-					</CarCard.Buy>
+					<Buy className='flex items-center rounded-[0] border-l-0 border-t-[1px] pt-[25px]'>
+						<Buy.Price className='mt-0 text-[21px] leading-[26px]'>
+							$3,150
+						</Buy.Price>
+						<Buy.Button className='ml-[22px] h-[50px] w-[120px]'>
+							BUY A CAR
+						</Buy.Button>
+						<Buy.Date className='ml-[15px]'>25.09.2023</Buy.Date>
+					</Buy>
 				</CarCard>
 			</div>
 		</div>
