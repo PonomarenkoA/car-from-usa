@@ -7,6 +7,8 @@ import { CopyToClipboard } from './CopyToClipboard';
 import { Header } from './Header';
 import { Banner } from './Banner';
 import { CarCard } from './CarCard';
+import { List } from './List';
+import { Accordion } from './Accordion';
 
 export {
 	FaqCard,
@@ -17,5 +19,7 @@ export {
 	CopyToClipboard,
 	Header,
 	Banner,
-	CarCard
+	CarCard,
+	List,
+	Accordion
 };

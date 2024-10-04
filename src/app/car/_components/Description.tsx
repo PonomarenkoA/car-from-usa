@@ -1,12 +1,12 @@
+import { Accordion } from '@/components';
+
 export const Description = () => {
 	return (
-		<>
-			<div className='h-[40px] border-b-[1px] border-b-[#E9E9E9]'>
-				<span className='text-[15px] font-semibold leading-[18px] text-[#303030]'>
-					Description
-				</span>
-			</div>
-			<div className='py-[20px] text-[15px] leading-[24px] text-[#818181]'>
+		<Accordion className='w-full px-[30px]'>
+			<Accordion.Header className='border-b-[1px] border-[#E9E9E9] py-[22px]'>
+				<span>Description</span>
+			</Accordion.Header>
+			<Accordion.Content className='py-[22px]'>
 				<p>
 					2011 FORD FOCUS SEL can be purchased at a US auction. The
 					company&apos;s managers CarLink will help you with the
@@ -26,7 +26,7 @@ export const Description = () => {
 					specified in consultation with the company&apos;s manager
 					CarLink.
 				</p>
-			</div>
-		</>
+			</Accordion.Content>
+		</Accordion>
 	);
 };

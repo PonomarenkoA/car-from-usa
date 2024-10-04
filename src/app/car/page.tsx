@@ -21,7 +21,7 @@ const CarPage = () => {
 						<h2 className='font-semibold'>
 							2018 Honda Accord Sport
 						</h2>
-						<div className='flex flex-wrap gap-[30px]'>
+						<div className='flex flex-wrap items-start gap-[30px]'>
 							<div className='flex h-[630px] w-[820px] flex-col gap-y-[15px]'>
 								<div className='relative h-[515px] w-[820px]'>
 									<Image
@@ -80,7 +80,7 @@ const CarPage = () => {
 									</div>
 								</div>
 							</div>
-							<div className='space-y-[34px]'>
+							<div className='w-[370px] space-y-[34px]'>
 								<CarCard className='h-[340px]'>
 									<CarCard.Buy className='border-0 p-[20px]'>
 										<CarCard.DateTimer className='rounded-[10px] bg-[#F7F7F7] pb-[25px] pt-[28px] text-[24px] leading-[29px]'>
@@ -99,19 +99,11 @@ const CarPage = () => {
 									</CarCard.Buy>
 								</CarCard>
 
-								<div className='h-[250px] w-[370px] rounded-[10px] bg-white'>
-									<DamageInfo />
-								</div>
+								<DamageInfo />
 							</div>
-							<div className='h-[280px] w-[820px] rounded-[10px] bg-white'>
-								<AuctionInfo />
-							</div>
-							<div className='h-[250px] w-[370px] rounded-[10px] bg-white'>
-								<VehicleInfo />
-							</div>
-							<div className='w-full bg-white px-[29px] py-[22px]'>
-								<Description />
-							</div>
+							<AuctionInfo />
+							<VehicleInfo />
+							<Description />
 						</div>
 					</div>
 					<Banner />

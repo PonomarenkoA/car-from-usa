@@ -1,40 +1,35 @@
 import { Accident } from '@/assets/svgs';
+import { Accordion, List } from '@/components';
 
 export const DamageInfo = () => {
 	return (
-		<>
-			<div className='flex items-center justify-between border-b-[1px] border-b-[#E9E9E9] px-[29px] py-[22px]'>
-				<span className='text-[15px] font-semibold leading-[18px] text-[#303030]'>
-					Damage Info:
-				</span>
-				<Accident width='23' height='24' />
-			</div>
-			<ul className='space-y-[13px] px-[29px] py-[22px] text-[15px] leading-[18px]'>
-				<li className='space-x-[12px]'>
-					<span className='inline-block w-[187px] font-normal text-[#818181]'>
-						Loss:
-					</span>
-					<span className='font-medium text-[#303030]'>
-						Collision
-					</span>
-				</li>
-				<li className='space-x-[12px]'>
-					<span className='inline-block w-[188px] font-normal text-[#818181]'>
-						Primary Damage:
-					</span>
-					<span className='font-medium text-[#303030]'>
-						Right Side
-					</span>
-				</li>
-				<li className='space-x-[12px]'>
-					<span className='inline-block w-[188px] font-normal text-[#818181]'>
-						Secondary Damage:
-					</span>
-					<span className='font-medium text-[#303030]'>
-						Front end
-					</span>
-				</li>
-			</ul>
-		</>
+		<Accordion className='w-full'>
+			<Accordion.Header className='border-b-[1px] border-[#E9E9E9] px-[30px] py-[22px]'>
+				<span>Damage Info:</span>
+				<Accident width='24' heigth='24' />
+			</Accordion.Header>
+			<Accordion.Content className='px-[30px] py-[22px]'>
+				<List className='space-y-[13px]'>
+					<List.Item
+						className='grid grid-cols-[187px_1fr]'
+						title='Loss:'
+					>
+						<span>Collision</span>
+					</List.Item>
+					<List.Item
+						className='grid grid-cols-[187px_1fr]'
+						title='Primary Damage:'
+					>
+						<span>Right Side</span>
+					</List.Item>
+					<List.Item
+						className='grid grid-cols-[187px_1fr]'
+						title='Secondary Damage:'
+					>
+						<span>Front end</span>
+					</List.Item>
+				</List>
+			</Accordion.Content>
+		</Accordion>
 	);
 };
