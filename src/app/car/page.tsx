@@ -1,4 +1,4 @@
-import { Banner, Breadcrumbs, Header } from '@/components';
+import { Banner, Breadcrumbs, Header, Timer } from '@/components';
 import Image from 'next/image';
 import {
 	DamageInfo,
@@ -85,7 +85,7 @@ const CarPage = () => {
 								<Buy className='w-[370px]'>
 									<Buy.DateTimer>
 										<Buy.Date>25.09.2023</Buy.Date>
-										<Buy.Timer></Buy.Timer>
+										<Timer deadline='25.09.2023' />
 									</Buy.DateTimer>
 									<Buy.Price>$3,150</Buy.Price>
 									<Buy.Buttons>
