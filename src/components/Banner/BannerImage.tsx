@@ -9,7 +9,14 @@ type Props = {
 export const BannerImage = ({ src, className }: Props) => {
 	return (
 		<div className={cn('relative min-h-[240px] min-w-[365px]', className)}>
-			<Image src={src} fill alt='' className='h-auto w-auto' priority />
+			<Image
+				src={src}
+				fill
+				sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+				alt=''
+				className='h-auto w-auto'
+				priority
+			/>
 		</div>
 	);
 };

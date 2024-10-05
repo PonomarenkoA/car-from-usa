@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	images: {
+		domains: ['cs.copart.com', 'anvis.iaai.com']
+	},
+
 	webpack(config) {
 		const fileLoaderRule = config.module.rules.find(rule =>
 			rule.test?.test?.('.svg')

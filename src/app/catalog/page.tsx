@@ -1,8 +1,15 @@
 import { Banner, Breadcrumbs, Header } from '@/components';
 import { Cars, Pagination, Toolbar } from './_components';
 import { Filter } from './_components/Filter';
+import { CurrentLots } from '../../lib/data';
 
-const CatalogPage = () => {
+const getCars = async () => {
+	return CurrentLots.data;
+};
+
+const CatalogPage = async () => {
+	const items = await getCars();
+
 	return (
 		<div>
 			<Header />
@@ -15,7 +22,7 @@ const CatalogPage = () => {
 					<div className='flex-1'>
 						<Toolbar />
 						<div className='mt-[20px] space-y-[15px]'>
-							<Cars />
+							<Cars items={items} />
 
 							<Banner>
 								<Banner.Image src='/83d13d22-f975-44d9-beb8-16d8fa5fef12.png' />
@@ -32,7 +39,7 @@ const CatalogPage = () => {
 								</Banner.Content>
 							</Banner>
 
-							<Cars />
+							{/* <Cars /> */}
 						</div>
 						<div className='mt-[40px]'>
 							<Pagination />

@@ -10,6 +10,7 @@ import { List } from './List';
 import { Accordion } from './Accordion';
 import { Buy } from './Buy';
 import { Banner } from './Banner';
+import { Timer } from './Timer';
 
 export {
 	FaqCard,
@@ -23,5 +24,6 @@ export {
 	CarCard,
 	List,
 	Accordion,
-	Buy
+	Buy,
+	Timer
 };

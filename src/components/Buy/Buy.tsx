@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils';
 import { BuyDateTimer } from './BuyDateTimer';
 import { BuyDate } from './BuyDate';
-import { BuyTimer } from './BuyTimer';
 import { BuyPrice } from './BuyPrice';
 import { BuyButtons } from './BuyButtons';
 import { BuyButton } from './BuyButton';
@@ -26,7 +25,6 @@ const Buy = ({ className, children }: Props) => {
 
 Buy.DateTimer = BuyDateTimer;
 Buy.Date = BuyDate;
-Buy.Timer = BuyTimer;
 Buy.Price = BuyPrice;
 Buy.Buttons = BuyButtons;
 Buy.Button = BuyButton;
