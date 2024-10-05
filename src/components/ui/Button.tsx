@@ -1,5 +1,6 @@
 'use client';
-import { clsx } from 'clsx';
+
+import { cn } from '@/lib/utils';
 
 interface ButtonProps {
 	title?: string;
@@ -22,8 +23,8 @@ export const Button = (props: ButtonProps) => {
 	return (
 		<button
 			onClick={onClick}
-			className={clsx(
-				'flex flex-row items-center justify-center',
+			className={cn(
+				'flex flex-row items-center justify-center rounded-[10px]',
 				className
 			)}
 		>

@@ -5,10 +5,11 @@ import { ChangeColors } from './ChangeColors';
 import { Breadcrumbs } from './Breadcrumbs';
 import { CopyToClipboard } from './CopyToClipboard';
 import { Header } from './Header';
-import { Banner } from './Banner';
 import { CarCard } from './CarCard';
 import { List } from './List';
 import { Accordion } from './Accordion';
+import { Buy } from './Buy';
+import { Banner } from './Banner';
 
 export {
 	FaqCard,
@@ -21,5 +22,6 @@ export {
 	Banner,
 	CarCard,
 	List,
-	Accordion
+	Accordion,
+	Buy
 };

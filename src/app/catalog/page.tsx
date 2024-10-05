@@ -16,7 +16,22 @@ const CatalogPage = () => {
 						<Toolbar />
 						<div className='mt-[20px] space-y-[15px]'>
 							<Cars />
-							<Banner />
+
+							<Banner>
+								<Banner.Image src='/83d13d22-f975-44d9-beb8-16d8fa5fef12.png' />
+								<Banner.Content>
+									<Banner.Title>
+										Do you want to connect our specialist to
+										the search{' '}
+										<span className='text-secondary'>
+											for free
+										</span>
+										?<br /> Fill the form!
+									</Banner.Title>
+									<Banner.Button title='Fill out the form' />
+								</Banner.Content>
+							</Banner>
+
 							<Cars />
 						</div>
 						<div className='mt-[40px]'>

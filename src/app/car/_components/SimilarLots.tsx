@@ -1,24 +1,31 @@
+'use client';
 import { RightArrow } from '@/assets/svgs';
-import { Buy } from '@/components/Buy';
-import { CarCard } from '@/components/CarCard';
+import { Accordion, Buy, CarCard } from '@/components';
+import { Button } from '@/components/ui';
 
 export const SimilarLots = () => {
 	return (
-		<div className='space-y-[20px]'>
-			<div className='flex items-center justify-between'>
+		<Accordion className='space-y-[20px] bg-[#FAFAFA]'>
+			<Accordion.Header>
 				<span className='text-[27px] font-semibold leading-[33px] text-[#303030]'>
 					Similar Lots
 				</span>
 				<div className='flex items-center gap-x-[20px]'>
-					<button className='flex h-[40px] w-[40px] rotate-180 items-center justify-center rounded-[10px] bg-white'>
+					<Button
+						className='h-[40px] w-[40px] rotate-180 bg-white'
+						onClick={() => {}}
+					>
 						<RightArrow width='12' height='12' fill='#818181' />
-					</button>
-					<button className='flex h-[40px] w-[40px] items-center justify-center rounded-[10px] bg-white'>
+					</Button>
+					<Button
+						className='h-[40px] w-[40px] bg-white'
+						onClick={() => {}}
+					>
 						<RightArrow width='12' height='12' fill='#818181' />
-					</button>
+					</Button>
 				</div>
-			</div>
-			<div className='flex flex-wrap'>
+			</Accordion.Header>
+			<Accordion.Content className='flex flex-wrap'>
 				<CarCard className='h-[594px] w-[390px]'>
 					<CarCard.Body className='flex-col'>
 						<CarCard.Image className='h-[250px] w-[350px]' />
@@ -37,7 +44,7 @@ export const SimilarLots = () => {
 						<Buy.Date className='ml-[15px]'>25.09.2023</Buy.Date>
 					</Buy>
 				</CarCard>
-			</div>
-		</div>
+			</Accordion.Content>
+		</Accordion>
 	);
 };

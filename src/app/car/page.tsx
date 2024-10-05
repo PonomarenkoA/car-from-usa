@@ -90,7 +90,7 @@ const CarPage = () => {
 									<Buy.Price>$3,150</Buy.Price>
 									<Buy.Buttons>
 										<Buy.Button>ORDER A CAR</Buy.Button>
-										<Buy.Button className='text-secondary-foreground bg-secondary'>
+										<Buy.Button className='bg-secondary text-secondary-foreground'>
 											$4,200
 											<br /> BUY IT NOW
 										</Buy.Button>
@@ -104,7 +104,25 @@ const CarPage = () => {
 							<Description />
 						</div>
 					</div>
-					<Banner />
+
+					<Banner className="bg-[url('/empty-grey-background.png')]">
+						<Banner.Content>
+							<Banner.Title>
+								Need help finding cars? <br />
+								Fill out the application and get a{' '}
+								<span className='text-secondary'>
+									free consultation
+								</span>
+								!
+							</Banner.Title>
+							<Banner.Button title='Fill out the form' />
+						</Banner.Content>
+						<Banner.Image
+							src='/used-cars-at-car-mart.png'
+							className='w-full'
+						/>
+					</Banner>
+
 					<SimilarLots />
 				</div>
 			</div>
