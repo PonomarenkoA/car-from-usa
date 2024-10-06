@@ -9,8 +9,6 @@ import { Lot } from '@/types';
 import useDebounce from '@/hooks/useDebounce';
 
 const getCars = async (search: string) => {
-	console.log('getCars', search);
-
 	if (!search) {
 		return CurrentLots;
 	}
