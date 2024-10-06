@@ -9,7 +9,13 @@ export const Header = () => {
 	return (
 		<div className='flex items-center bg-white px-[30px] py-[25px]'>
 			<Link href='/'>
-				<Image src='/PNG-4.png' width={220} height={45} alt='' />
+				<Image
+					src='/PNG-4.png'
+					width={220}
+					height={45}
+					alt=''
+					priority
+				/>
 			</Link>
 			<div className='ml-[170px]'>
 				<ChangeColors />

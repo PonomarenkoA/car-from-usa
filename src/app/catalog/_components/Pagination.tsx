@@ -1,8 +1,18 @@
 import { RightArrow } from '@/assets/svgs';
+import { cn } from '@/lib/utils';
 
-export const Pagination = () => {
+type Props = {
+	className?: string;
+};
+
+export const Pagination = ({ className }: Props) => {
 	return (
-		<ul className='flex items-center gap-x-[10px] text-[15px] font-medium leading-[18px] text-[#818181]'>
+		<ul
+			className={cn(
+				'flex items-center gap-x-[10px] text-[15px] font-medium leading-[18px] text-[#818181]',
+				className
+			)}
+		>
 			<li className='flex h-[40px] w-[40px] items-center justify-center rounded-[10px] bg-white text-secondary'>
 				1
 			</li>

@@ -1,17 +1,18 @@
-import { CarCard, Timer } from '@/components';
+import { Banner, CarCard, Timer } from '@/components';
 import { Buy } from '@/components/Buy';
-import { formatCurrency, formatDate } from '@/lib/utils';
+import { cn, formatCurrency, formatDate } from '@/lib/utils';
 import { Lot } from '@/types';
 import Link from 'next/link';
 
 type Props = {
 	items: Lot[];
+	className?: string;
 };
 
-export const Cars = async ({ items }: Props) => {
+export const Cars = ({ items, className }: Props) => {
 	return (
-		<div className='flex flex-col gap-y-[15px]'>
-			{items.map((item: Lot) => (
+		<div className={cn('flex flex-col gap-y-[15px]', className)}>
+			{items.map((item: Lot, index) => (
 				<Link key={item.lot_id} href={`/car/${item.lot_id}`}>
 					<CarCard className='flex'>
 						<CarCard.Body>
@@ -47,6 +48,25 @@ export const Cars = async ({ items }: Props) => {
 							</Buy.Buttons>
 						</Buy>
 					</CarCard>
+
+					{index === 7 ? (
+						<Banner className='mt-[15px]'>
+							<Banner.Image src='/83d13d22-f975-44d9-beb8-16d8fa5fef12.png' />
+							<Banner.Content>
+								<Banner.Title>
+									Do you want to connect our specialist to the
+									search{' '}
+									<span className='text-secondary'>
+										for free
+									</span>
+									?<br /> Fill the form!
+								</Banner.Title>
+								<Banner.Button title='Fill out the form' />
+							</Banner.Content>
+						</Banner>
+					) : (
+						''
+					)}
 				</Link>
 			))}
 		</div>
