@@ -9,12 +9,14 @@ interface ButtonProps {
 	className?: string;
 	leftIcon?: React.ReactElement;
 	rightIcon?: React.ReactElement;
+	disabled?: boolean;
 }
 
 export const Button = (props: ButtonProps) => {
 	const {
 		title,
 		onClick,
+		disabled,
 		className,
 		leftIcon: LeftIcon,
 		rightIcon: RightIcon,
@@ -22,6 +24,7 @@ export const Button = (props: ButtonProps) => {
 	} = props;
 	return (
 		<button
+			disabled={disabled}
 			onClick={onClick}
 			className={cn(
 				'flex flex-row items-center justify-center rounded-[10px]',

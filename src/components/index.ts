@@ -11,6 +11,7 @@ import { Accordion } from './Accordion';
 import { Buy } from './Buy';
 import { Banner } from './Banner';
 import { Timer } from './Timer';
+import { Slider } from './Slider';
 
 export {
 	FaqCard,
@@ -25,5 +26,6 @@ export {
 	List,
 	Accordion,
 	Buy,
-	Timer
+	Timer,
+	Slider
 };

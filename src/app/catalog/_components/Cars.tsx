@@ -1,7 +1,7 @@
 import { CarCard, Timer } from '@/components';
 import { Buy } from '@/components/Buy';
-import { Lot } from '@/lib/data';
 import { formatCurrency, formatDate } from '@/lib/utils';
+import { Lot } from '@/types';
 import Link from 'next/link';
 
 type Props = {
@@ -12,7 +12,7 @@ export const Cars = async ({ items }: Props) => {
 	return (
 		<div className='flex flex-col gap-y-[15px]'>
 			{items.map((item: Lot) => (
-				<Link key={item.lot_id} href={'/car'}>
+				<Link key={item.lot_id} href={`/car/${item.lot_id}`}>
 					<CarCard className='flex'>
 						<CarCard.Body>
 							<CarCard.Image src={item.images[0]} />

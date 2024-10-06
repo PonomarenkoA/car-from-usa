@@ -1,17 +1,3 @@
-export type Lot = {
-	lot_id: string;
-	title: string;
-	auction: string;
-	status: string;
-	location: string;
-	odometer: number;
-	vin: string;
-	damage_first: string;
-	auction_date: string;
-	price_buynow: number;
-	images: string[];
-};
-
 export const CurrentLots = {
 	size: 10,
 	page: 1,

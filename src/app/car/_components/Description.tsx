@@ -1,6 +1,11 @@
 import { Accordion } from '@/components';
+import { Lot } from '@/types';
 
-export const Description = () => {
+type Props = {
+	item: Lot;
+};
+
+export const Description = ({ item }: Props) => {
 	return (
 		<Accordion className='w-full px-[30px]'>
 			<Accordion.Header className='border-b-[1px] border-[#E9E9E9] py-[22px]'>
@@ -8,7 +13,7 @@ export const Description = () => {
 			</Accordion.Header>
 			<Accordion.Content className='py-[22px]'>
 				<p>
-					2011 FORD FOCUS SEL can be purchased at a US auction. The
+					{item.title} can be purchased at a US auction. The
 					company&apos;s managers CarLink will help you with the
 					application and safe delivery of the selected lot. We will
 					bring the car at the best price. We have our own parking

@@ -1,7 +1,12 @@
 import { Info } from '@/assets/svgs';
 import { Accordion, CopyToClipboard, List } from '@/components';
+import { Lot } from '@/types';
 
-export const AuctionInfo = () => {
+type Props = {
+	item: Lot;
+};
+
+export const AuctionInfo = async ({ item }: Props) => {
 	return (
 		<Accordion className='w-[820px]'>
 			<Accordion.Header className='border-b-[1px] border-[#E9E9E9] px-[30px] py-[22px]'>
@@ -14,38 +19,38 @@ export const AuctionInfo = () => {
 						className='grid grid-cols-[425px_1fr]'
 						title='VIN Code:'
 					>
-						<CopyToClipboard text='1HGCV2F38MA025435' />
+						<CopyToClipboard text={item.vin} />
 					</List.Item>
 					<List.Item
 						className='grid grid-cols-[425px_1fr]'
 						title='Lot ID:'
 					>
-						<CopyToClipboard text='374556699' />
+						<CopyToClipboard text={item.lot_id} />
 					</List.Item>
 					<List.Item
 						className='grid grid-cols-[425px_1fr]'
 						title='State:'
 					>
-						<span>IN</span>
+						{item.state}
 					</List.Item>
 
 					<List.Item
 						className='grid grid-cols-[425px_1fr]'
 						title='Location:'
 					>
-						<span>Indianapolis</span>
+						{item.location}
 					</List.Item>
 					<List.Item
 						className='grid grid-cols-[425px_1fr]'
 						title='Documet:'
 					>
-						<span>Clean</span>
+						{item.document}
 					</List.Item>
 					<List.Item
 						className='grid grid-cols-[425px_1fr]'
 						title='Seller:'
 					>
-						<span>VRD Wholesale Dealer</span>
+						{item.seller}
 					</List.Item>
 				</List>
 			</Accordion.Content>
