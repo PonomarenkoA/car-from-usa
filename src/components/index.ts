@@ -12,6 +12,7 @@ import { Buy } from './Buy';
 import { Banner } from './Banner';
 import { Timer } from './Timer';
 import { Slider } from './Slider';
+import { SearchBar } from './SearchBar';
 
 export {
 	FaqCard,
@@ -27,5 +28,6 @@ export {
 	Accordion,
 	Buy,
 	Timer,
-	Slider
+	Slider,
+	SearchBar
 };
