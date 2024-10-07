@@ -12,7 +12,7 @@ export const CurrentLots = {
 			cost_priced: 20519,
 			cost_repair: 20856,
 			year: '2020',
-			auction_date: '2024-10-07T17:00:00.000Z',
+			auction_date: '2024-10-17T17:00:00.000Z',
 			cylinders: '4',
 			state: 'MI',
 			vehicle_type: 'AUTOMOBILE',

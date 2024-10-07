@@ -8,17 +8,15 @@ import {
 	useState
 } from 'react';
 
-export type Theme = 'theme1' | 'theme2' | 'theme3' | 'theme4' | 'theme5';
-
 export const defaultTheme = 'theme1';
 
 export interface ThemeContextType {
-	theme?: Theme | null;
-	setTheme: React.Dispatch<SetStateAction<string>>;
+	theme?: string | undefined;
+	setTheme: React.Dispatch<SetStateAction<string | undefined>>;
 }
 
 const initialContext: ThemeContextType = {
-	theme: null,
+	theme: undefined,
 	setTheme: () => ''
 };
 
@@ -27,18 +25,34 @@ const ThemeContext = createContext(initialContext);
 const storageKey = 'Theme';
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-	const [theme, setTheme] = useState<Theme | undefined>(undefined);
+	const [theme, setTheme] = useState<string | undefined>(undefined);
 
 	useEffect(() => {
 		const oldTheme = localStorage.getItem(storageKey);
+		let newTheme = '';
+
 		if (oldTheme) {
-			document.documentElement.classList.remove(oldTheme);
+			newTheme = oldTheme;
+		} else {
+			newTheme = defaultTheme;
 		}
 
-		document.documentElement.classList.add(theme);
-		localStorage.setItem(storageKey, theme);
+		setTheme(newTheme);
+		localStorage.setItem(storageKey, newTheme as string);
+		document.documentElement.classList.add(newTheme as string);
+	}, []);
 
-		//document.body.setAttribute('data-theme', theme);
+	useEffect(() => {
+		const oldTheme = localStorage.getItem(storageKey);
+
+		if (theme) {
+			if (oldTheme) {
+				document.documentElement.classList.remove(oldTheme);
+			}
+
+			localStorage.setItem(storageKey, theme as string);
+			document.documentElement.classList.add(theme as string);
+		}
 	}, [theme]);
 
 	return (

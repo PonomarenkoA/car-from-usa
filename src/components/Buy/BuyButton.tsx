@@ -8,7 +8,11 @@ type Props = {
 	children: React.ReactNode;
 };
 
-export const BuyButton = ({ onClick, className, children }: Props) => {
+export const BuyButton = ({
+	onClick = () => null,
+	className,
+	children
+}: Props) => {
 	return (
 		<Button
 			onClick={onClick}
