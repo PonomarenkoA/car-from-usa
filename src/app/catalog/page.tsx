@@ -1,5 +1,5 @@
 'use client';
-import { Breadcrumbs, Header } from '@/components';
+import { Breadcrumbs } from '@/components';
 import { Cars, Pagination, Toolbar } from './_components';
 import { Filter } from './_components/Filter';
 import { CurrentLots } from '../../lib/data';
@@ -43,19 +43,16 @@ const CatalogPage = () => {
 
 	return (
 		<Suspense fallback={<div>Loading...</div>}>
-			<div>
-				<Header />
-				<div className='flex-1 space-y-[27px] bg-[#FAFAFA] px-[30px] pb-[106px] pt-[16px]'>
-					<Breadcrumbs />
-					<div className='flex gap-x-[29px]'>
-						<div className='w-[260px]'>
-							<Filter />
-						</div>
-						<div className='flex-1'>
-							<Toolbar sizeResult={size} />
-							<Cars items={items} className='mt-[20px]' />
-							<Pagination className='mt-[40px]' />
-						</div>
+			<div className='flex-1 space-y-[27px] bg-[#FAFAFA] px-[30px] pb-[106px] pt-[16px]'>
+				<Breadcrumbs />
+				<div className='flex gap-x-[29px]'>
+					<div className='w-[260px]'>
+						<Filter />
+					</div>
+					<div className='flex-1'>
+						<Toolbar sizeResult={size} />
+						<Cars items={items} className='mt-[20px]' />
+						<Pagination className='mt-[40px]' />
 					</div>
 				</div>
 			</div>
