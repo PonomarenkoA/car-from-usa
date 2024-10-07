@@ -3,18 +3,17 @@ import { cn } from '@/lib/utils';
 import { Button } from '../ui';
 
 type Props = {
+	onClick?: () => void;
 	className?: string;
 	children: React.ReactNode;
 };
 
-export const BuyButton = ({ className, children }: Props) => {
+export const BuyButton = ({ onClick, className, children }: Props) => {
 	return (
 		<Button
-			onClick={() => {
-				console.log('OnClick');
-			}}
+			onClick={onClick}
 			className={cn(
-				'text-primary-foreground h-full w-full rounded-[10px] bg-primary text-center text-[13px] font-bold leading-[16px]',
+				'h-full w-full rounded-[10px] bg-primary text-center text-[13px] font-bold leading-[16px] text-primary-foreground',
 				className
 			)}
 		>

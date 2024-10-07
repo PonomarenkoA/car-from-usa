@@ -1,8 +1,9 @@
+'use client';
 import { Banner, CarCard, Timer } from '@/components';
 import { Buy } from '@/components/Buy';
 import { cn, formatCurrency, formatDate } from '@/lib/utils';
 import { Lot } from '@/types';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 type Props = {
 	items: Lot[];
@@ -10,11 +11,13 @@ type Props = {
 };
 
 export const Cars = ({ items, className }: Props) => {
+	const router = useRouter();
+
 	return (
 		<div className={cn('flex flex-col gap-y-[15px]', className)}>
 			{items.map((item: Lot, index) => (
 				<>
-					<CarCard className='flex'>
+					<CarCard key={item.lot_id} className='flex'>
 						<CarCard.Body>
 							<CarCard.Image src={item.images[0]} />
 							<CarCard.Content>
@@ -36,12 +39,13 @@ export const Cars = ({ items, className }: Props) => {
 								{formatCurrency(item.price_buynow)}
 							</Buy.Price>
 							<Buy.Buttons className='mt-[17px] h-[50px] gap-x-[10px]'>
-								<Link
-									key={item.lot_id}
-									href={`/car/${item.lot_id}`}
+								<Buy.Button
+									onClick={() =>
+										router.push(`/car/${item.lot_id}`)
+									}
 								>
-									<Buy.Button>BUY A CAR</Buy.Button>
-								</Link>
+									BUY A CAR
+								</Buy.Button>
 								{item.price_buynow !== 0 ? (
 									<Buy.Button className='bg-secondary text-secondary-foreground'>
 										{formatCurrency(item.price_buynow)}{' '}
