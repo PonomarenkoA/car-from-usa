@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
+import { Suspense } from 'react';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -20,7 +21,11 @@ export default function RootLayout({
 			<body
 				className={`${montserrat.className} relative mx-auto max-w-[1280px] overflow-x-hidden pb-[70px] antialiased`}
 			>
-				<Providers>{children}</Providers>
+				<Providers>
+					<Suspense fallback={<div>Loading...</div>}>
+						{children}
+					</Suspense>
+				</Providers>
 			</body>
 		</html>
 	);
