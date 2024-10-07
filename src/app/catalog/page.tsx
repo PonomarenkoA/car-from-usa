@@ -4,7 +4,7 @@ import { Cars, Pagination, Toolbar } from './_components';
 import { Filter } from './_components/Filter';
 import { CurrentLots } from '../../lib/data';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Lot } from '@/types';
 import useDebounce from '@/hooks/useDebounce';
 
@@ -42,22 +42,24 @@ const CatalogPage = () => {
 	}, [debouncedSearch]);
 
 	return (
-		<div>
-			<Header />
-			<div className='flex-1 space-y-[27px] bg-[#FAFAFA] px-[30px] pb-[106px] pt-[16px]'>
-				<Breadcrumbs />
-				<div className='flex gap-x-[29px]'>
-					<div className='w-[260px]'>
-						<Filter />
-					</div>
-					<div className='flex-1'>
-						<Toolbar sizeResult={size} />
-						<Cars items={items} className='mt-[20px]' />
-						<Pagination className='mt-[40px]' />
+		<Suspense fallback={<div>Loading...</div>}>
+			<div>
+				<Header />
+				<div className='flex-1 space-y-[27px] bg-[#FAFAFA] px-[30px] pb-[106px] pt-[16px]'>
+					<Breadcrumbs />
+					<div className='flex gap-x-[29px]'>
+						<div className='w-[260px]'>
+							<Filter />
+						</div>
+						<div className='flex-1'>
+							<Toolbar sizeResult={size} />
+							<Cars items={items} className='mt-[20px]' />
+							<Pagination className='mt-[40px]' />
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</Suspense>
 	);
 };
 
