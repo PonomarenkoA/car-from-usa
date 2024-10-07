@@ -13,7 +13,7 @@ export const Cars = ({ items, className }: Props) => {
 	return (
 		<div className={cn('flex flex-col gap-y-[15px]', className)}>
 			{items.map((item: Lot, index) => (
-				<Link key={item.lot_id} href={`/car/${item.lot_id}`}>
+				<>
 					<CarCard className='flex'>
 						<CarCard.Body>
 							<CarCard.Image src={item.images[0]} />
@@ -36,7 +36,12 @@ export const Cars = ({ items, className }: Props) => {
 								{formatCurrency(item.price_buynow)}
 							</Buy.Price>
 							<Buy.Buttons className='mt-[17px] h-[50px] gap-x-[10px]'>
-								<Buy.Button>BUY A CAR</Buy.Button>
+								<Link
+									key={item.lot_id}
+									href={`/car/${item.lot_id}`}
+								>
+									<Buy.Button>BUY A CAR</Buy.Button>
+								</Link>
 								{item.price_buynow !== 0 ? (
 									<Buy.Button className='bg-secondary text-secondary-foreground'>
 										{formatCurrency(item.price_buynow)}{' '}
@@ -67,7 +72,7 @@ export const Cars = ({ items, className }: Props) => {
 					) : (
 						''
 					)}
-				</Link>
+				</>
 			))}
 		</div>
 	);
