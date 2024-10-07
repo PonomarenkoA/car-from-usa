@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { List } from '../List';
-import { Lot } from '@/lib/data';
+import { Lot } from '@/types';
 
 type Props = {
 	item: Lot;
