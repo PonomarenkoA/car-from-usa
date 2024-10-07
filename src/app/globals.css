@@ -10,22 +10,40 @@
 		--color-secondary-foreground: 255 255 255;
 	}
 
-	/*
-		#FFE600
-		#0075FF
+	.theme1 {
+		--color-primary: 255 230 0; /* #FFE600 */
+		--color-primary-foreground: 48 48 48;
+		--color-secondary: 0 118 254; /* #0076FE */
+		--color-secondary-foreground: 255 255 255;
+	}
 
-		#EF1B1A
-		#003688
+	.theme2 {
+		--color-primary: 239 27 26;
+		--color-primary-foreground: 255 255 255;
+		--color-secondary: 0 54 136;
+		--color-secondary-foreground: 255 255 255;
+	}
 
-		#00C96E
-		#FFC700
+	.theme3 {
+		--color-primary: 0 201 110;
+		--color-primary-foreground: 48 48 48;
+		--color-secondary: 146 146 147;
+		--color-secondary-foreground: 255 255 255;
+	}
 
-		#0042D7
-		#FF8500
+	.theme4 {
+		--color-primary: 38 66 212;
+		--color-primary-foreground: 255 255 255;
+		--color-secondary: 223 35 35;
+		--color-secondary-foreground: 255 255 255;
+	}
 
-		#8600CB
-		#FFDE00	
-	*/
+	.theme5 {
+		--color-primary: 134 0 203;
+		--color-primary-foreground: 255 255 255;
+		--color-secondary: 255 222 0;
+		--color-secondary-foreground: 255 255 255;
+	}
 
 	h1 {
 		@apply text-[50px] font-bold leading-[62px];

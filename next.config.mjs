@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ['cs.copart.com', 'anvis.iaai.com']
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'anvis.iaai.com'
+			},
+			{
+				protocol: 'https',
+				hostname: 'cs.copart.com'
+			}
+		]
 	},
 
 	webpack(config) {

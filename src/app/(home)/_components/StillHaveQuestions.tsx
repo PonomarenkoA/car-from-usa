@@ -43,7 +43,7 @@ export const StillHaveQuestions = () => {
 							title='SEND A REQUEST'
 							leftIcon={<Email />}
 							onClick={() => console.log('OnClick')}
-							className='mx-auto mt-[50px] gap-[17px] rounded-[15px] bg-primary px-[45px] py-[26px] text-[15px] font-bold leading-[18px] text-[#303030]'
+							className='mx-auto mt-[50px] gap-[17px] rounded-[15px] bg-primary px-[45px] py-[26px] text-[15px] font-bold leading-[18px] text-primary-foreground'
 						/>
 					</form>
 				</div>

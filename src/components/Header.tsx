@@ -1,6 +1,6 @@
 'use client';
 import { Email } from '@/assets/svgs';
-import { ChangeColors } from '@/components';
+import { ThemeSwitcher } from '@/components';
 import { Button } from '@/components/ui';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export const Header = () => {
 				/>
 			</Link>
 			<div className='ml-[170px]'>
-				<ChangeColors />
+				<ThemeSwitcher />
 			</div>
 			<Button
 				title='CONTACT US'

@@ -1,7 +1,7 @@
 import { FaqCard } from './FaqCard';
 import { ServicePriceCard } from './ServicePriceCard';
 import { FilterCard } from './FilterCard';
-import { ChangeColors } from './ChangeColors';
+import { ThemeSwitcher } from './ThemeSwitcher';
 import { Breadcrumbs } from './Breadcrumbs';
 import { CopyToClipboard } from './CopyToClipboard';
 import { Header } from './Header';
@@ -18,7 +18,7 @@ export {
 	FaqCard,
 	ServicePriceCard,
 	FilterCard,
-	ChangeColors,
+	ThemeSwitcher,
 	Breadcrumbs,
 	CopyToClipboard,
 	Header,
