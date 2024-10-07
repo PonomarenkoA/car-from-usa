@@ -16,7 +16,9 @@ export const Cars = ({ items, className }: Props) => {
 				<>
 					<CarCard key={item.lot_id} className='flex'>
 						<CarCard.Body>
-							<CarCard.Image src={item.images[0]} />
+							<Link href={`/car/${item.lot_id}`}>
+								<CarCard.Image src={item.images[0]} />
+							</Link>
 							<CarCard.Content>
 								<CarCard.Title>{item.title}</CarCard.Title>
 								<CarCard.Details item={item} />
