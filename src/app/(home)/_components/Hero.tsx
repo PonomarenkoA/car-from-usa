@@ -32,7 +32,7 @@ export const Hero = () => {
 						/>
 					}
 					onClick={() => {
-						router.push('/catalog');
+						router.push('/search');
 					}}
 					className='mt-[55px] gap-4 rounded-[15px] bg-primary px-10 py-7 text-[15px] font-bold leading-[18px] text-primary-foreground'
 				/>

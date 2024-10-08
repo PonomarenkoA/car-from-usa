@@ -1,5 +1,4 @@
 'use client';
-import { Breadcrumbs } from '@/components';
 import { Cars, Pagination, Toolbar } from './_components';
 import { Filter } from './_components/Filter';
 import { CurrentLots } from '@/lib/data';
@@ -7,6 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Lot } from '@/types';
 import useDebounce from '@/hooks/useDebounce';
+import { Breadcrumbs } from '../_components';
 
 const getCars = (search: string) => {
 	if (!search) {
@@ -23,7 +23,7 @@ const getCars = (search: string) => {
 	return { page: 1, size: result.length, data: result };
 };
 
-const CatalogPage = () => {
+const SearchPage = () => {
 	const params = useSearchParams();
 	const search = params.get('search') ?? '';
 	const debouncedSearch = useDebounce(search, 1000);
@@ -53,4 +53,4 @@ const CatalogPage = () => {
 	);
 };
 
-export default CatalogPage;
+export default SearchPage;

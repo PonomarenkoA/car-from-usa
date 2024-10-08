@@ -1,4 +1,4 @@
-import { Banner, Breadcrumbs, Slider, Timer } from '@/components';
+import { Banner, Slider, Timer } from '@/components';
 import {
 	DamageInfo,
 	AuctionInfo,
@@ -11,6 +11,7 @@ import { CurrentLots } from '@/lib/data';
 import { formatCurrency, formatDate } from '@/lib/utils';
 import { redirect } from 'next/navigation';
 import Image from 'next/image';
+import { Breadcrumbs } from '../../_components';
 
 const getCar = async (lot_id: string) => {
 	return CurrentLots.data.find(f => f.lot_id === lot_id);

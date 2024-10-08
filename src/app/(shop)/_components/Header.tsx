@@ -1,9 +1,9 @@
 'use client';
 import { Email } from '@/assets/svgs';
-import { ThemeSwitcher } from '@/components';
 import { Button } from '@/components/ui';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ThemeSwitcher } from '.';
 
 export const Header = () => {
 	return (
