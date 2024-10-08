@@ -1,4 +1,4 @@
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import Link from 'next/link';
 
 export const Breadcrumbs = () => {

@@ -1,5 +1,5 @@
 'use client';
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import { Accordion, Buy, CarCard } from '@/components';
 import { Button } from '@/components/ui';
 import { CurrentLots } from '@/lib/data';

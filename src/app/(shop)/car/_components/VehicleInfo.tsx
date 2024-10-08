@@ -1,4 +1,4 @@
-import { SteeringWheel } from '@/assets/svgs';
+import { SteeringWheel } from '@/assets/icons';
 import { Accordion, List } from '@/components';
 import { formatMiles } from '@/lib/utils';
 import { Lot } from '@/types';

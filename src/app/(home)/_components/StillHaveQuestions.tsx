@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Email } from '@/assets/svgs';
+import { Email } from '@/assets/icons';
 import { Button } from '@/components/ui';
 
 export const StillHaveQuestions = () => {

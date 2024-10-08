@@ -1,5 +1,5 @@
 'use client';
-import { Minus, Plus } from '@/assets/svgs';
+import { Minus, Plus } from '@/assets/icons';
 import { FaqItem } from '@/types';
 import { useState } from 'react';
 

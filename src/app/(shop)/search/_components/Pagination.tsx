@@ -1,4 +1,4 @@
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import { cn } from '@/lib/utils';
 
 type Props = {

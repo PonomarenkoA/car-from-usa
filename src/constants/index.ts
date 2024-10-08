@@ -5,7 +5,7 @@ import {
 	SecureShield,
 	Traffic,
 	WebDesign
-} from '@/assets/svgs';
+} from '@/assets/icons';
 import {
 	FaqItem,
 	FilterItem,

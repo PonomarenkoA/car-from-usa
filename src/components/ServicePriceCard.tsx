@@ -1,5 +1,5 @@
 'use client';
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import { ServicePriceItem } from '@/types';
 import { Button } from './ui';
 

@@ -1,4 +1,4 @@
-import { Accident } from '@/assets/svgs';
+import { Accident } from '@/assets/icons';
 import { Accordion, List } from '@/components';
 import { Lot } from '@/types';
 

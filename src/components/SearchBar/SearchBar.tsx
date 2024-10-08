@@ -1,5 +1,5 @@
 'use client';
-import { Loupe } from '@/assets/svgs';
+import { Loupe } from '@/assets/icons';
 import { useSearchBar } from './useSearchBar';
 
 export const SearchBar = () => {

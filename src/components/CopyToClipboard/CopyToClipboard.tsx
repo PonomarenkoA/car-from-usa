@@ -1,5 +1,5 @@
 'use client';
-import { Check, Copy } from '@/assets/svgs';
+import { Check, Copy } from '@/assets/icons';
 import { useCopyToClipboard } from './useCopyToClipboard';
 
 interface Props {

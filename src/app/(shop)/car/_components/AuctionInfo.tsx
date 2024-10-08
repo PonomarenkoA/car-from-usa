@@ -1,4 +1,4 @@
-import { Info } from '@/assets/svgs';
+import { Info } from '@/assets/icons';
 import { Accordion, CopyToClipboard, List } from '@/components';
 import { Lot } from '@/types';
 

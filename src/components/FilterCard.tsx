@@ -1,5 +1,5 @@
 'use client';
-import { Cancel, DownArrow } from '@/assets/svgs';
+import { Cancel, DownArrow } from '@/assets/icons';
 import { FilterItem } from '@/types';
 import { useEffect, useState } from 'react';
 

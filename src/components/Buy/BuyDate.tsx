@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { Calendar } from '@/assets/svgs';
+import { Calendar } from '@/assets/icons';
 
 type Props = {
 	className?: string;

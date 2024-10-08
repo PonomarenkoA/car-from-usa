@@ -1,5 +1,5 @@
 'use client';
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import Image from 'next/image';
 import { useCallback, useState } from 'react';
 

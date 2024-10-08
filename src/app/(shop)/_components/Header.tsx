@@ -1,5 +1,5 @@
 'use client';
-import { Email } from '@/assets/svgs';
+import { Email } from '@/assets/icons';
 import { Button } from '@/components/ui';
 import Image from 'next/image';
 import Link from 'next/link';

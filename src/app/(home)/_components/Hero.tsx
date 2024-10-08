@@ -1,5 +1,5 @@
 'use client';
-import { RightArrow } from '@/assets/svgs';
+import { RightArrow } from '@/assets/icons';
 import { Button } from '@/components/ui';
 import { useRouter } from 'next/navigation';
 

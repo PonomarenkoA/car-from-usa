@@ -1,6 +1,6 @@
 'use client';
 import { useTheme } from '@/app/providers/ThemeProvider';
-import { Accept } from '@/assets/svgs';
+import { Accept } from '@/assets/icons';
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 
