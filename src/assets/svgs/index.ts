@@ -18,6 +18,7 @@ import Info from './info.svg';
 import SteeringWheel from './steering-wheel.svg';
 import Copy from './copy.svg';
 import Check from './check.svg';
+import Close from './close.svg';
 
 export {
 	Application,
@@ -39,5 +40,6 @@ export {
 	Info,
 	SteeringWheel,
 	Copy,
-	Check
+	Check,
+	Close
 };

@@ -1,6 +1,6 @@
 import { Header } from './_components';
 
-export default function CatalogLayout({
+export default function ShopLayout({
 	children
 }: {
 	children: React.ReactNode;

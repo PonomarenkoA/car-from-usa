@@ -10,6 +10,7 @@ import { Banner } from './Banner';
 import { Timer } from './Timer';
 import { Slider } from './Slider';
 import { SearchBar } from './SearchBar';
+import { Carousel } from './Carousel';
 
 export {
 	FaqCard,
@@ -23,5 +24,6 @@ export {
 	Buy,
 	Timer,
 	Slider,
-	SearchBar
+	SearchBar,
+	Carousel
 };

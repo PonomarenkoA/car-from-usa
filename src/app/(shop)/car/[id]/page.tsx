@@ -20,7 +20,7 @@ const getCar = async (lot_id: string) => {
 const CarPage = async ({ params }: { params: { id: string } }) => {
 	const item = await getCar(params.id);
 
-	if (!item) redirect('/catalog');
+	if (!item) redirect('/search');
 
 	return (
 		<>
