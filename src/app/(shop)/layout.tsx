@@ -6,9 +6,9 @@ export default function CatalogLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div>
+		<div className='min-h-screen bg-[#FAFAFA]'>
 			<Header />
-			{children}
+			<main className='flex-1 px-[30px] py-[20px]'>{children}</main>
 		</div>
 	);
 }

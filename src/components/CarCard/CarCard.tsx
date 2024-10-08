@@ -14,7 +14,7 @@ const CarCard = ({ className, children }: Props) => {
 	return (
 		<div
 			className={cn(
-				'h-[235px] w-full rounded-[10px] border-[1px] border-[#E9E9E9] bg-white',
+				'h-full w-full rounded-[10px] border-[1px] border-[#E9E9E9] bg-white',
 				className
 			)}
 		>

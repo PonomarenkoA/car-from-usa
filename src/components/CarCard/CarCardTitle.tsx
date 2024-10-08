@@ -4,8 +4,8 @@ type Props = {
 
 export const CarCardTitle = ({ children }: Props) => {
 	return (
-		<p className='texy-[21px] font-semibold leading-[26px] text-[#303030]'>
+		<div className='flex items-center justify-between text-[21px] font-semibold leading-[26px] text-[#303030]'>
 			{children}
-		</p>
+		</div>
 	);
 };

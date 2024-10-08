@@ -24,7 +24,13 @@ export const Hero = () => {
 				</p>
 				<Button
 					title='DEMO VERSION'
-					rightIcon={<RightArrow width='11' height='11' />}
+					rightIcon={
+						<RightArrow
+							width='11'
+							height='11'
+							className='fill-primary-foreground'
+						/>
+					}
 					onClick={() => {
 						router.push('/catalog');
 					}}

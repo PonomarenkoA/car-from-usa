@@ -1,6 +1,4 @@
 import {
-	Header,
-	Footer,
 	HowItWorks,
 	WhatIsItFor,
 	ServicePrices,
@@ -11,26 +9,20 @@ import {
 
 const HomePage = () => {
 	return (
-		<>
-			<Header />
+		<section className='relative'>
+			<Hero />
+			<div className='space-y-[63px] px-[70px]'>
+				<HowItWorks />
 
-			<main className='relative'>
-				<Hero />
-				<div className='space-y-[63px] px-[70px]'>
-					<HowItWorks />
+				<WhatIsItFor />
 
-					<WhatIsItFor />
+				<ServicePrices />
 
-					<ServicePrices />
+				<Faq />
 
-					<Faq />
-
-					<StillHaveQuestions />
-				</div>
-			</main>
-
-			<Footer />
-		</>
+				<StillHaveQuestions />
+			</div>
+		</section>
 	);
 };
 
